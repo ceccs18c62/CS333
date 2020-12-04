@@ -1,27 +1,26 @@
 CREATE TABLE Class (
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `name` VARCHAR(50)
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50)
 );
 
 
--- (b) Insert values into the table --
-INSERT INTO Class (`name`) VALUES ("LALAMAN"), ("SUSMA"), ("BEEKER");
+INSERT INTO Class VALUES (1,"Ram");
+INSERT INTO Class VALUES (2,"Sam");
+INSERT INTO Class VALUES (3."Raj");
 
--- (c) Display the table --
 SELECT * FROM Class;
 
--- (d) Apply commit, save point and rollback commands --
 START TRANSACTION;
 
-INSERT INTO Class (`name`) VALUES ("NEWMAN");
+INSERT INTO Class VALUES (4,"Sham");
 ROLLBACK; 
 
-INSERT INTO Class (`name`) VALUES ("NEWMAN");
+INSERT INTO Class VALUES (4,"Sham");
 COMMIT;
 
 START TRANSACTION;
-SAVEPOINT BeforeEvilEra;
-INSERT INTO Class (`name`) VALUES ("EVILERA");
-ROLLBACK TO BeforeEvilEra;
+SAVEPOINT Point;
+INSERT INTO Class VALUES (5,"Helen");
+ROLLBACK TO Point;
 
 COMMIT;
