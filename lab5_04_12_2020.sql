@@ -1,5 +1,5 @@
 CREATE TABLE Class (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY,
     name VARCHAR(50)
 );
 
