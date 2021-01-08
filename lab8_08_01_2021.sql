@@ -28,3 +28,15 @@ SELECT MIN(salary) FROM Employee;
 
 -- 7
 SELECT COUNT(*) FROM Employee;
+
+--output
+
+
+42000.0
+51000.0
+35500.0
+17000.0
+4
+
+[Program exited with exit code 0]
+
