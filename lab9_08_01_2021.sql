@@ -34,3 +34,19 @@ VALUES
 
 -- 4
 SELECT branch_name,COUNT(baccno),SUM(amount) FROM Deposit GROUP BY branch_name;
+
+
+--output
+
+t46|Tom|2000-08-12|clerk|36000.0
+s45|Sam|2000-08-19|sales|35000.0
+R45|Ram|2000-09-22|manager|85000.0
+r47|Raj|2000-06-10|ceo|75000.0
+ern|1|785426.0
+kzd|1|47856.0
+mal|1|12000.0
+pkd|1|975462.0
+tsr|1|90000.0
+
+[Program exited with exit code 0]
+
