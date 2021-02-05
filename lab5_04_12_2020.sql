@@ -6,7 +6,7 @@ CREATE TABLE Class (
 
 INSERT INTO Class VALUES (1,"Ram");
 INSERT INTO Class VALUES (2,"Sam");
-INSERT INTO Class VALUES (3."Raj");
+INSERT INTO Class VALUES (3,"Raj");
 
 SELECT * FROM Class;
 
