@@ -1,6 +1,6 @@
 -- create a table
 CREATE TABLE Employee (
-  code varchar(4),
+  code varchar(5),
   name varchar(10),
   designation varchar(30),
   dop date,
